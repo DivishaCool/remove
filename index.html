@@ -1,0 +1,11 @@
+<button onclick="add()">Shopping list</button>  
+
+<script>
+    
+function add(){
+list="apple"
+  localStorage.setItem(list,"apple");
+}
+
+onbeforeunload = function() { localStorage.removeItem(list); return ''; }; 
+</script>
